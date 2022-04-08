@@ -24,7 +24,7 @@ this action so that the git repository is initialized.
     # keys within the target repository
     ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
     # The SSH-based URL to the target repository
-    target_repo_url: git@github.com:net-engine/github-repository-sync-action-test.git
+    target_repo_url: git@github.com:ayr-ton/git-deploy-action-test.git
     # The branch to push to the target repository, defaults to the current branch
     target_branch: main
 ```
