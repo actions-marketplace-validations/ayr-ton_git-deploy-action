@@ -17,7 +17,7 @@ this action so that the git repository is initialized.
 
 ```yaml
 # File: .github/workflows/mirror.yml
-- uses: ayr-ton/git-deploy-action@v1
+- uses: ayr-ton/git-deploy-action@v1.1
   with:
     # The SSH private key for SSH connection to the target repository.
     # We strongly recommend saving this value as a GitHub Secret and using deploy
