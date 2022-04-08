@@ -13,3 +13,4 @@ jobs:
       with:
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         target_repo_url: git@github.com:ayr-ton/git-deploy-action-test.git
+        target_branch: gh-pages-test
