@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/ayr-ton/git-deploy-action-test">
-    <img alt="GitHub Action build status" src="https://github.com/ayr-ton/git-deploy-action-test/workflows/test/badge.svg">
+  <a href="https://github.com/ayr-ton/git-deploy-action">
+    <img alt="GitHub Action build status" src="https://github.com/ayr-ton/git-deploy-action/workflows/test/badge.svg">
   </a>
 </p>
 
