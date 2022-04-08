@@ -1,6 +1,6 @@
 name: Git Repository Sync
 description: Sync current repository to a remote repository on GitHub, GitLab, AWS CodeCommit, etc.
-author: NetEngine
+author: ayr-ton
 branding:
   icon: upload-cloud
   color: blue
@@ -11,6 +11,9 @@ inputs:
   target_repo_url:
     description: Target git repository URL
     required: true
+  target_branch:
+    description: Target git branch name, if any
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
