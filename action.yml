@@ -1,4 +1,4 @@
-name: Git Repository Sync
+name: Git Deploy Action
 description: Sync current repository to a remote repository on GitHub, GitLab, AWS CodeCommit, etc.
 author: ayr-ton
 branding:
