@@ -7,7 +7,7 @@ chmod 600 /root/.ssh/id_rsa
 
 git remote add destination "$INPUT_TARGET_REPO_URL"
 
-if ${INPUT_TARGET_BRANCH+"false"}
+if [ -n "${INPUT_TARGET_BRANCH+set}" ];
 then
    git checkout $INPUT_TARGET_BRANCH
    git push destination "$INPUT_TARGET_BRANCH:$INPUT_TARGET_BRANCH" -f
