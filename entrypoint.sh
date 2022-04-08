@@ -11,6 +11,8 @@ if ${INPUT_TARGET_BRANCH+"false"}
 then
    git checkout $INPUT_TARGET_BRANCH
    git push destination "$INPUT_TARGET_BRANCH:$INPUT_TARGET_BRANCH" -f
+   echo "Pushed to branch $INPUT_TARGET_BRANCH"
 else
    git push destination "$GITHUB_REF:$GITHUB_REF" -f
+   echo "Pushed to branch $GITHUB_REF"
 fi
