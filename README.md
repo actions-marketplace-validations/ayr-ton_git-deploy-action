@@ -16,8 +16,11 @@ Be sure to run the [`actions/checkout`](https://github.com/actions/checkout) act
 this action so that the git repository is initialized.
 
 ```yaml
-# File: .github/workflows/mirror.yml
-- uses: ayr-ton/git-deploy-action@v1
+- uses: actions/checkout@v3
+  with:
+    fetch-depth: 0
+    ref: main
+- uses: ayr-ton/git-deploy-action@v1.1
   with:
     # The SSH private key for SSH connection to the target repository.
     # We strongly recommend saving this value as a GitHub Secret and using deploy
@@ -25,7 +28,7 @@ this action so that the git repository is initialized.
     ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
     # The SSH-based URL to the target repository
     target_repo_url: git@github.com:ayr-ton/git-deploy-action-test.git
-    # The branch to push to the target repository, defaults to the current branch
+    # The branch to push to the target repository, mandatory
     target_branch: main
 ```
 

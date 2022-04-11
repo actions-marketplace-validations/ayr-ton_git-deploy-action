@@ -12,8 +12,8 @@ inputs:
     description: Target git repository URL
     required: true
   target_branch:
-    description: Target git branch name, if any
-    required: false
+    description: Target git branch name
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'

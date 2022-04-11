@@ -6,11 +6,12 @@ jobs:
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 0
+        ref: main
     - uses: ./
       with:
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         target_repo_url: git@github.com:ayr-ton/git-deploy-action-test.git
-        target_branch: gh-pages-test
+        target_branch: main
